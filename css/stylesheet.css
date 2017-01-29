@@ -9,14 +9,24 @@ ABOUT
   margin: 0 auto;
 }
 
-.title {
-  display:inline;
+.teaser {
+  position: relative;
 }
 
-.img-right img {
-  height:200px;
+.title {
+  position: absolute;
+
+}
+
+.img-right {
   border-radius: 50%;
   margin-left: calc(75% - 100px);
+  background-image: url("../images/schulz_svenja.jpg");
+  background-size: 200px auto;
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+
 }
 
 .content {
@@ -41,6 +51,66 @@ ABOUT
 HOME
 
 */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    margin-top: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content:hover {
+  display: inline-block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
 
 
 /* 
