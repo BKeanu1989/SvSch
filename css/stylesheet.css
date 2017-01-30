@@ -17,6 +17,30 @@ body.cv .block-empty:before  {
   content: "\25A1";
 }
 
+[class*="block"] {
+  font-size: 30px;
+}
+
+[class*="item"] {
+  display: inline-block;
+  width: 120px;
+  vertical-align: super;
+}
+
+div.date {
+  width: 30%;
+  float: left;
+}
+
+.date p, .study-info h4 {
+  margin: 0;
+}
+
+div.study-info {
+  width:70%;
+  float:left;
+}
+
 body.cv .teaser {
   height: 200px;
   position: relative;
@@ -45,9 +69,6 @@ body.cv .carrier-skill-container .main {
   border: 2.5px solid black;
   box-sizing: border-box;
 }
-
-
-
 
 body.cv .img-mid {
   position: absolute;
@@ -92,7 +113,7 @@ body.about_me .title {
 
 body.about_me .img-right {
   border-radius: 50%;
-  margin-left: calc(75% - 100px);
+  margin-left: calc(80% - 100px);
   background-image: url("../images/schulz_svenja.jpg");
   background-size: 200px auto;
   width: 200px;
@@ -106,17 +127,19 @@ body.about_me .content {
 }
 
 body.about_me .main-content {
-  height: 250px;
-  background-color: blue;
-  width: 75%;
+  height: 300px;
+  width: 80%;
   float:left;
+  text-align: right;
+  border-right: 2.5px solid black;
+
 }
 
 body.about_me .sidebar {
   height:250px;
-  background-color: black;
   float:left;
   width:25%;
+  box-sizing: border-box;
 }
 /* 
 
@@ -210,7 +233,83 @@ body.home .dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
 
+/* 
 
+Grafik
+
+*/
+
+nav.side ul {
+  list-style-type: none;
+  // display:flex;
+  // width:70vh;    
+  height:45px;
+  position:fixed;
+  background:#4c4c4c;
+  -webkit-transform-origin: left top;
+  -webkit-transform:rotate(-90deg) translateX(-100%);
+  -webkit-padding-start: 20px;
+  top: 12.5%;
+}
+
+nav.side ul li {
+  // float: left;
+  // flex-grow: 1;
+  margin-right:20px;
+  float:right;
+  height:100%;
+  line-height:45px;
+}
+
+nav.side ul li:before {
+  content:"|";
+  font-size: 25px;
+  padding-right: 20px;
+}
+
+nav.side ul li:last-child:before {
+  content:"";
+}
+
+nav.side .dropdown-content {
+  display:none;
+}
+
+nav.side .dropdown-content:hover {
+  display: inline-block;
+  transform: rotate(90deg);
+  position: relative;
+}
+
+nav.side .dropdown-content a:hover {
+  display: block;
+}
+
+nav.side .dropdown-content ul {
+  list-style-type: none;
+  // display:flex;
+  // width:70vh;    
+  height:45px;
+  position:fixed;
+  background:#4c4c4c;
+  // -webkit-transform-origin: left top;
+  -webkit-transform:rotate(-90deg) translateX(-100%);
+  -webkit-padding-start: 20px;
+  top: 12.5%;
+}
+
+nav.side .dropdown-content ul li {
+  // float: left;
+  // flex-grow: 1;
+  margin-right:20px;
+  float:right;
+  height:100%;
+  line-height:45px;
+}
+
+nav.side [class*="item"] {
+  width:180px;
+}
 /* 
 
 Generic
@@ -231,6 +330,10 @@ Generic
 
 .flex-item {
   flex-grow: 1;
+}
+
+.clear {
+  clear: both;
 }
 
 /*
