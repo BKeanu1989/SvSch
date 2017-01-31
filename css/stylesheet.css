@@ -310,6 +310,61 @@ nav.side .dropdown-content ul li {
 nav.side [class*="item"] {
   width:180px;
 }
+
+nav.side .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+nav.side .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+nav.side .dropdown-content:hover {
+  display: inline-block;
+}
+
+nav.side .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+nav.side .dropdown-content ul {
+  text-align: center;
+}
+
+nav.side .dropdown-content ul li:before {
+  content:"";
+  font-size: 1em;
+  padding-right: 0px;
+}
+
+nav.side .dropdown-content ul li:last-child:before {
+  content:"";
+}
+
+1emside .dropdown-content li {
+  wdth:100%;
+}
+
+nav.side .dropdown-content a:hover {background-color: #f1f1f1}
+
+nav.side .dropdown:hover .dropdown-content {
+    display: block;
+    transform: rotate(90deg);
+    height:;
+}
+
+nav.side .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
 /* 
 
 Generic
