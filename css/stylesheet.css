@@ -391,6 +391,103 @@ Generic
   clear: both;
 }
 
+/* 
+
+  Typography
+
+*/
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.third {
+  width:33.3%;
+
+}
+
+
+body.typography .left {
+  float: left;
+}
+
+.image_parent {
+  position: relative;
+  overflow:hidden;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+
+.image_parent .caption{
+  // display: none;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  z-index: 100;
+  bottom: 0%;
+  width:100%;
+  height: 50px;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.image_parent:hover .caption {
+  // display: block;
+  visibility: visible;
+  opacity: 1;
+  background-color: green;
+
+}
+/* 
+
+  Grafik
+
+*/
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.two_thirds {
+  width:66.66%;
+
+}
+
+
+
+body.graphic .left {
+  float: left;
+}
+
+.image_parent {
+  position: relative;
+  overflow:hidden;
+  border: 1px solid black;
+  border-radius: 25px;
+  box-sizing: border-box;
+  
+}
+
+.image_parent .caption{
+  // display: none;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  z-index: 100;
+  bottom: 0%;
+  width:100%;
+  height: 50px;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.image_parent:hover .caption {
+  // display: block;
+  visibility: visible;
+  opacity: 1;
+  background-color: green;
+  
+}
 /*
 
   CSS TRICKS
@@ -427,15 +524,15 @@ svg {
   width: 50%;
 }
 
-.left {
-  float: left;
-  width: 50%;
-  text-align: center;
-  height: 100%;
-  display: flex;
-  justify-content: center; /* align horizontal */
-  align-items: center; /* align vertical */
-}
+// .left {
+//   float: left;
+//   width: 50%;
+//   text-align: center;
+//   height: 100%;
+//   display: flex;
+//   justify-content: center; /* align horizontal */
+//   align-items: center; /* align vertical */
+// }
 
 th {
   border-bottom: 3px solid black;
