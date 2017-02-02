@@ -91,6 +91,15 @@ body.cv .left-content{
 body.cv .right-content{
   float: left;
 }
+
+body.cv .mb {
+  margin-bottom: 5px;
+}
+
+body.cv [class*="-item"]  {
+  width:100px;
+}
+
 /*
 
 ABOUT
@@ -393,7 +402,6 @@ Generic
   clear: both;
 }
 
-<<<<<<< HEAD
 /* 
 
   Typography
@@ -407,6 +415,10 @@ Generic
 .third {
   width:33.3%;
 
+}
+
+.two_thirds {
+  width: 66.66%;
 }
 
 
@@ -496,8 +508,30 @@ body.graphic .left {
   background-color: green;
   
 }
-=======
->>>>>>> 7ac0edf7f474c71106436e437e9f44e1b30f7a51
+
+/*
+
+Contact
+
+*/
+
+body.contact .container {
+  margin:0 auto;
+  width: 80%;
+  font-family: "Lato";
+}
+
+body.contact h1{
+  font-family: "Pompiere";
+  font-size: 60px;
+  color: #fd5f00;
+}
+
+body.contact .send-mail{
+  width: 459px;
+  text-align: center;
+}
+
 /*
 
   CSS TRICKS
@@ -536,12 +570,7 @@ svg {
 
 .left {
   float: left;
-  width: 50%;
-  text-align: center;
-  height: 100%;
-  display: flex;
-  justify-content: center; /* align horizontal */
-  align-items: center; /* align vertical */
+
 }
 
 th {
