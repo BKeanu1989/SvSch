@@ -465,7 +465,11 @@ body.graphic .left {
   border: 1px solid black;
   border-radius: 25px;
   box-sizing: border-box;
-  
+
+}
+
+.image_parent img {
+  width:100%;
 }
 
 .image_parent .caption{
