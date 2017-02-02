@@ -41,6 +41,8 @@ div.study-info {
   float:left;
 }
 
+
+
 body.cv .teaser {
   height: 200px;
   position: relative;
@@ -51,13 +53,18 @@ body.cv .title {
   left: 5%;
   top: 50%;
   margin:0;
+  font-family: "Pompiere";
+  font-size: 60px;
+  color: #fd5f00;
 }
 
 body.cv .name {
   position: absolute;
   top: 50%;
   right: 5%;
-
+  font-family: "Pompiere";
+  font-size: 60px;
+  color: #fd5f00;
 }
 
 body.cv .carrier-skill-container .main {
@@ -98,6 +105,19 @@ body.cv .mb {
 
 body.cv [class*="-item"]  {
   width:100px;
+}
+
+h3{
+  font-family: "Lato";
+  font-size: 18px;
+  color: #fd5f00;
+}
+
+h4{
+  font-family: "Lato";
+  font-size: 18px;
+  color: #fd5f00;
+  font-weight: bold;
 }
 
 /*
