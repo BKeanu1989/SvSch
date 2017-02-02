@@ -1,4 +1,4 @@
-/* 
+/*
 
   CV
 
@@ -23,7 +23,7 @@ body.cv .block-empty:before  {
 
 [class*="item"] {
   display: inline-block;
-  width: 120px;
+  padding: 0 20px 0 0 !important;
   vertical-align: super;
 }
 
@@ -91,7 +91,7 @@ body.cv .left-content{
 body.cv .right-content{
   float: left;
 }
-/* 
+/*
 
 ABOUT
 
@@ -141,7 +141,7 @@ body.about_me .sidebar {
   width:25%;
   box-sizing: border-box;
 }
-/* 
+/*
 
 HOME
 
@@ -233,17 +233,18 @@ body.home .dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
 
-/* 
+/*
 
 Grafik
 
 */
 
+
+
+
+/*
 nav.side ul {
   list-style-type: none;
-  // display:flex;
-  // width:70vh;    
-  height:45px;
   position:fixed;
   background:#4c4c4c;
   -webkit-transform-origin: left top;
@@ -253,8 +254,6 @@ nav.side ul {
 }
 
 nav.side ul li {
-  // float: left;
-  // flex-grow: 1;
   margin-right:20px;
   float:right;
   height:100%;
@@ -288,7 +287,7 @@ nav.side .dropdown-content a:hover {
 nav.side .dropdown-content ul {
   list-style-type: none;
   // display:flex;
-  // width:70vh;    
+  // width:70vh;
   height:45px;
   position:fixed;
   background:#4c4c4c;
@@ -300,7 +299,6 @@ nav.side .dropdown-content ul {
 
 nav.side .dropdown-content ul li {
   // float: left;
-  // flex-grow: 1;
   margin-right:20px;
   float:right;
   height:100%;
@@ -365,7 +363,11 @@ nav.side .dropdown:hover .dropdown-content {
 nav.side .dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
-/* 
+*/
+
+
+
+/*
 
 Generic
 
@@ -384,115 +386,18 @@ Generic
 }
 
 .flex-item {
-  flex-grow: 1;
+  /*flex-grow: 1;*/
 }
 
 .clear {
   clear: both;
 }
 
-/* 
-
-  Typography
-
-*/
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.third {
-  width:33.3%;
-
-}
-
-
-body.typography .left {
-  float: left;
-}
-
-.image_parent {
-  position: relative;
-  overflow:hidden;
-  border: 1px solid black;
-  border-radius: 25px;
-}
-
-.image_parent .caption{
-  // display: none;
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  z-index: 100;
-  bottom: 0%;
-  width:100%;
-  height: 50px;
-  text-align: center;
-  transition: all 0.2s;
-}
-
-.image_parent:hover .caption {
-  // display: block;
-  visibility: visible;
-  opacity: 1;
-  background-color: green;
-
-}
-/* 
-
-  Grafik
-
-*/
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.two_thirds {
-  width:66.66%;
-
-}
-
-
-
-body.graphic .left {
-  float: left;
-}
-
-.image_parent {
-  position: relative;
-  overflow:hidden;
-  border: 1px solid black;
-  border-radius: 25px;
-  box-sizing: border-box;
-  
-}
-
-.image_parent .caption{
-  // display: none;
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  z-index: 100;
-  bottom: 0%;
-  width:100%;
-  height: 50px;
-  text-align: center;
-  transition: all 0.2s;
-}
-
-.image_parent:hover .caption {
-  // display: block;
-  visibility: visible;
-  opacity: 1;
-  background-color: green;
-  
-}
 /*
 
   CSS TRICKS
 
- */ 
+ */
 
 
 circle {
@@ -524,15 +429,15 @@ svg {
   width: 50%;
 }
 
-// .left {
-//   float: left;
-//   width: 50%;
-//   text-align: center;
-//   height: 100%;
-//   display: flex;
-//   justify-content: center; /* align horizontal */
-//   align-items: center; /* align vertical */
-// }
+.left {
+  float: left;
+  width: 50%;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+}
 
 th {
   border-bottom: 3px solid black;
@@ -551,4 +456,49 @@ a {
   text-decoration: none;
   font-size: 30px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+
+
+
+
+/* thanh zeug asdasdasdasd */
+
+
+html, body{
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+nav.side{
+  transform: rotate(-90deg) translate(-50%, 0);
+  transform-origin: left top;
+}
+
+nav.side .dropdown-content{
+  display: none;
+}
+
+nav.side ul .dropdown{
+  margin: 0;
+  padding: 0;
+}
+nav.side ul li{
+  display: block;
+}
+
+nav.side ul .dropdown:hover .dropdown-content{
+  display: inline;
+}
+
+nav.side ul .dropdown-content{
+  position: absolute;
+
+}
+
+nav ul{
+  -webkit-padding-start: 0;
 }
