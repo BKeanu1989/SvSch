@@ -6,19 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
 	<link rel="stylesheet" href="css/stylesheet.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="js/jquery/jquery.easy-pie-chart.js"></script>
+  <style>
+
+
+  </style>
 </head>
 <body class="cv">
     <nav class="side">
       <!-- <h1 class="center">Svenja Schulz</h1> -->
       <ul class="flex-container">
-        <li class="dropdown flex-item">
+        <li class="dropdown">
           <a href="#">About Me</a>
           <ul class="dropdown-content">
             <li><a href="about_me.html">About</a></li>
             <li><a href="cv.html">CV</a></li>
           </ul>
         </li>
-        <li class="dropdown flex-item">
+        <li class="dropdown">
           <a href="#">Gallery</a>
           <ul class="dropdown-content">
             <li><a href="graphic.html">Grafik</a></li>
@@ -26,10 +32,10 @@
             <li><a href="photography.html">Fotografie</a></li>
           </ul>
         </li>
-        <li class="dropdown flex-item">
+        <li class="dropdown">
           <a href="contact.html">Contact</a>
         </li>
-        <li class="dropdown flex-item">
+        <li class="dropdown">
           <a href="home.html">Home</a>
         </li>
       </ul>
@@ -83,31 +89,17 @@
           </div>
 
         </div>
-        <div class="carrier-skill-container">
-          <h3>PROFESSIONELL SKILLS</h3>
-          <div class="main creative-cloud">
 
-          </div>
-          <div class="main power-point">
-            <div class="sub">
-              Power Point
-
-            </div>
-          </div>
-          <div class="main word">
-            <div class="sub">
-              Word
-
-            </div>
-          </div>
-          <div class="main excel">
-            <div class="sub">
-              Excel
-
-            </div>
-          </div>
-
+        <div class="charts">
+          <div class="chart" data-percent="85" data-scale-color="#ffb400"><span>Creative Cloud</span></div>
+          <div class="chart" data-percent="50" data-scale-color="#ffb400"><span>Power Point</span></div>
+          <div class="chart" data-percent="60" data-scale-color="#ffb400"><span>Word</span></div>
+          <div class="chart" data-percent="40" data-scale-color="#ffb400"><span>Excel</span></div>  
         </div>
+        
+
+
+        
       </div>
       <div class="right-content half">
       <div class="study-wrap">
@@ -222,6 +214,23 @@
       </div>
     </div>
   </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="js/jquery/jquery.easy-pie-chart.js"></script>
+<script>
 
+    $(function() {
+  $('.chart').easyPieChart({
+    scaleColor: "#ecf0f1",
+    lineWidth: 20,
+    lineCap: 'butt',
+    barColor: '#1abc9c',
+    trackColor: "#ecf0f1",
+    size: 150,
+    animate: 500
+  });
+});
+
+
+</script>
 </body>
 </html>
